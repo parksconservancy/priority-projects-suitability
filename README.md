@@ -4,8 +4,8 @@ Document describing data inputs and workflow process for developing priority pro
 ### Project folder:
 C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\ClimateResilienceRacialJustice
 ### ArcGIS Pro Project:
-"C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\ClimateResilienceRacialJustice\ProjectsCommunityIndicators.aprx"
-Map Title: 'ProjectPrioritiesData_GGNRA'
+C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\ClimateResilienceRacialJustice\ProjectsCommunityIndicators.aprx
+__Map Title:__ 'ProjectPrioritiesData_GGNRA'
 
 
 ## Project Consisted of Multiple input datasets in three categories: 
