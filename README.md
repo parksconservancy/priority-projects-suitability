@@ -1,5 +1,5 @@
-# priority-projects-suitability
-Repo with a README.md describing workflow process and data inputs for developing priority projects suitability map for 3 county area.   
+# Suitability analysis for generally locating Priority Projects
+Document describing data inputs and workflow process for developing priority projects suitability map for 3 county area. 
 
 ## Project Consisted of Multiple input datasets in two categories: 
 
