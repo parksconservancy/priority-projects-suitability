@@ -1,6 +1,13 @@
 # Suitability analysis for generally locating Priority Projects
 Document describing data inputs and workflow process for developing priority projects suitability map for 3 county area. 
 
+### Project folder:
+C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\ClimateResilienceRacialJustice
+### ArcGIS Pro Project:
+"C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\ClimateResilienceRacialJustice\ProjectsCommunityIndicators.aprx"
+Map Title: 'ProjectPrioritiesData_GGNRA'
+
+
 ## Project Consisted of Multiple input datasets in three categories: 
 
 ### Climate Resilience:
@@ -19,12 +26,17 @@ Document describing data inputs and workflow process for developing priority pro
 
 1. California Protected Areas Database (CPAD) holdings in their most detailed form at the prcel level. [California Protected Areas Database](hhttps://www.calands.org/cpad/)  
 
+## Suitability Analysis
+In general terms a suitability analysis overlays geopgraphic data in grid/cell form and outputs a score based a on a common scale i.e. 1 being the least suitable value and 5 the being the most suitable. The values that overlap are added to togehter to create an overall suitability score. The maximum score wil be the number of input layers x the value assigned for the most suitable class. In this case that would be 7 (number of data inputs listed above) x 5 (maximum suitability value for each data input). So, the most suitable areas for siting projects in our analysis have a score of 35 and the least suitable areas have a score of 7.
+
 ## Workflow and Data Processing  
 
 1. Compile data
-2. Clip all data both vector and raster to the three county area that includes GGNRA lands
+2. Clip all data both vector and raster to the three county area that includes GGNRA lands  
 3. Verify the coordinate reference system (crs) is common to all datasets - in this case we use NAD 1983 UTM Zone 10N, epsg: 26910
-4. For existing rasters resample all of them to 10-m nearest neighbor algorithm
+4. For existing rasters resample all of them to 10-m nearest neighbor algorithm  
 5. In order for vector datasets to appear as continuous they are merged, intersected or unioned with the data with county boundaries and assigned a no x value or zero to areas with no data. For example, for example fire hazard areas without the class of moderate, high or very high will receive a ‘no hazard class’. 
-6. Fire Hazard classes / suitability values are: No Haz =1, Moderate = 3, High= 4, Very High = 5.
-7. CalEnviro Screen pollution data included values in the 60th percentile and above for **"Pollution Burden"** were included in data and get a score of 5 and values below that received a score of 1
+6. Fire Hazard classes / suitability values are: No Haz =1, Moderate = 3, High= 4, Very High = 5.  
+7. CalEnviro Screen pollution data included values in the 60th percentile and above for **"Pollution Burden"** were included in data and get a score of 5 and values below that received a score of 1  
+8. CalEnviro Screen poverty (percent of the population living below two times the federal poverty Level) data includes values in the 40th percentile and above. Census tracts with values in the 40th percentile or above=5 and values below that=1.
+9. Heat severity is measured on a scale of 1-5. 1 being a relatively mild heat area and 5 being a severe heat area. The values of 1-5 are used as input to the suitability analysis
