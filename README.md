@@ -1,4 +1,4 @@
-# Suitability analysis for generally locating Priority Projects
+# Suitability Analysis for Generally Locating Priority Projects
 Document describing data inputs and workflow process for developing priority projects suitability map for 3 county area. 
 
 ### Project folder:
