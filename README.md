@@ -25,4 +25,6 @@ Document describing data inputs and workflow process for developing priority pro
 2. Clip all data both vector and raster to the three county area that includes GGNRA lands
 3. Verify the coordinate reference system (crs) is common to all datasets - in this case we use NAD 1983 UTM Zone 10N, epsg: 26910
 4. For existing rasters resample all of them to 10-m nearest neighbor algorithm
-5. In order for vector datasets to appears as continuous we merge, intersect or union the data with county boundaries and assign a no x value or zero to areas with no data. For example, 
+5. In order for vector datasets to appear as continuous they are merged, intersected or unioned with the data with county boundaries and assigned a no x value or zero to areas with no data. For example, for example fire hazard areas without the class of moderate, high or very high will receive a ‘no hazard class’. 
+6. Fire Hazard classes / suitability values are: No Haz =1, Moderate = 3, High= 4, Very High = 5.
+7. CalEnviro Screen pollution data included values in the 60th percentile and above for **"Pollution Burden"** were included in data and get a score of 5 and values below that received a score of 1
