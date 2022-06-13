@@ -1,7 +1,7 @@
 # Suitability analysis for generally locating Priority Projects
 Document describing data inputs and workflow process for developing priority projects suitability map for 3 county area. 
 
-## Project Consisted of Multiple input datasets in two categories: 
+## Project Consisted of Multiple input datasets in three categories: 
 
 ### Climate Resilience:
 
@@ -12,5 +12,17 @@ Document describing data inputs and workflow process for developing priority pro
 
 ### Racial Justice:
 
-1. CalEnviro Screen pollution data included values in the 60th percentile and above were included in data and get a score of 5 and values below that received a score of 1 [CalEnviroScreen 4.0 Geodatabase](https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40gdbf2021gdb.zip)
-2. CalEnviro Screen poverty (Percent of the population living below two times the federal poverty Level) data includes values in the 40th percentile and above were included in data. Gets a value of 5 (highest suitability) and values below that get a score of 1 [CalEnviroScreen 4.0 Geodatabase](https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40gdbf2021gdb.zip)
+1. CalEnviro Screen pollution data included values in the 60th percentile [CalEnviroScreen 4.0 Geodatabase](https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40gdbf2021gdb.zip)
+2. CalEnviro Screen poverty (percent of the population living below two times the federal poverty Level) data includes values in the 40th percentile and above were included in data. [CalEnviroScreen 4.0 Geodatabase](https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40gdbf2021gdb.zip)
+
+### Open Space:
+
+1. California Protected Areas Database (CPAD) holdings in their most detailed form at the prcel level. [California Protected Areas Database](hhttps://www.calands.org/cpad/)  
+
+## Workflow and Data Processing  
+
+1. Compile data
+2. Clip all data both vector and raster to the three county area that includes GGNRA lands
+3. Verify the coordinate reference system (crs) is common to all datasets - in this case we use NAD 1983 UTM Zone 10N, epsg: 26910
+4. For existing rasters resample all of them to 10-m nearest neighbor algorithm
+5. In order for vector datasets to appears as continuous we merge, intersect or union the data with county boundaries and assign a no x value or zero to areas with no data. For example, 
