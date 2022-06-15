@@ -30,7 +30,7 @@ __Map Title:__ 'ProjectPrioritiesData_GGNRA'
 In general terms a suitability analysis overlays geopgraphic data in raster form, tranforms them to a common scale and outputs a score based a that scale, with 1 being the least suitable value and 5 the being the most suitable. For this suitability analysis the Open Space data were weighted more heavily than other inputs because this is where the Conservancy does it work. Using a multiplier method for weighting open space was given 1.5 the weight of the other inputs. 
 
 ## Workflow and Data Processing  
-### ArcGIS Pro Suitability Modeler is used to generate the 
+### ArcGIS Pro Suitability Modeler is used to generate the suitability raster and locations
 
 1. Compile data
 2. Clip all data both vector and raster to the three county area that includes GGNRA lands  where necessary
