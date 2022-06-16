@@ -27,7 +27,9 @@ __Map Title:__ 'ProjectPrioritiesData_GGNRA'
 1. California Protected Areas Database (CPAD) holdings in their most detailed form at the parcel level. [California Protected Areas Database](hhttps://www.calands.org/cpad/)  
 
 ## Suitability Analysis
-In general terms a suitability analysis overlays geopgraphic data in raster form, tranforms them to a common scale and outputs a score based a that scale, with 1 being the least suitable value and 5 the being the most suitable. For this suitability analysis the Open Space data were weighted more heavily than other inputs because this is where the Conservancy does it work. Using a multiplier method for weighting open space was given 1.5 the weight of the other inputs. 
+In general terms a suitability analysis overlays geographic data in raster form, tranforms them to a common scale and outputs a score based a that scale, with 1 being the least suitable value and 5 the being the most suitable for each input dataset. With one exception, open space data were weighted more heavily than other inputs because this is where the Conservancy does it work. Using a multiplier method for weighting open space was given 1.5 the weight of the other inputs. 
+
+With this in mind inputs are combined to create an overall suitability score that sums the values for each pixel at its location, so with 6 inputs the minimum value could be as low as 6.5 ((5x1) + (1x1.5) = 6.5) and the maximum value could be as high as 31.5 ((5x5) + (1x6.5) = 31.5). 
 
 ## Workflow and Data Processing  
 #### ArcGIS Pro Suitability Modeler is used to generate the suitability raster and locations
@@ -45,4 +47,6 @@ In general terms a suitability analysis overlays geopgraphic data in raster form
 11. Heat severity is measured on a scale of 1-5., with 1 being a relatively mild heat area (slightly above the mean for the city), and 5 being a severe heat area (significantly above the mean for the city).  
 12. CPAD polygons are converted to raster with the following classes assigned: not open space = 1, unknown access = 2, no public access = 3, restricted access = 4, open access = 5
 
+#### Sample Suitability Analysis:  
+[Suitability Map]('graphics/suitabilitysample.jpg')
 
