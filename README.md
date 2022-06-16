@@ -48,5 +48,5 @@ With this in mind inputs are combined to create an overall suitability score tha
 12. CPAD polygons are converted to raster with the following classes assigned: not open space = 1, unknown access = 2, no public access = 3, restricted access = 4, open access = 5
 
 #### Sample Suitability Analysis:  
-![Suitability Map]('graphics/suitabilitysample.JPG')
+![Suitability Map](graphics/suitabilitysample.JPG)
 
