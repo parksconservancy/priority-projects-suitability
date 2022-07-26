@@ -8,7 +8,7 @@ C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\ClimateResil
 __Map Title:__ 'ProjectPrioritiesData_GGNRA'
 
 
-## Project Consisted of Multiple input datasets in three categories: 
+## Project Consisted of Multiple input datasets in two categories: 
 
 ### Climate Resilience:
 
