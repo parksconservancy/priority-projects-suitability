@@ -40,7 +40,7 @@ With this in mind inputs are combined to create an overall suitability score tha
 4. Verify the coordinate reference system (crs) is common to all datasets - in this case we use NAD 1983 UTM Zone 10N, epsg: 26910  
 5. For existing rasters resample all of them to 10-m nearest neighbor algorithm  
 6. In order for vector datasets to appear as continuous they are merged, intersected or unioned with county boundaries and assigned a no x value or zero to areas with no data. For example, for  example fire hazard areas without the class of moderate, high or very high will receive a ‘no hazard class’. 
-7. Convert contiuous vector datasets to 10-m rasters, making sure to enable the snap raster function to the one of the re-samples existing rasters i.e. C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\__DataLibrary\SeaLevelRise\Marin_SLR_ART_2017.gdb\Marin_SLR_ART_2017.gdb\Marin_inundation_rast_108  
+7. Convert continuous vector datasets to 10-m rasters, making sure to enable the snap raster function to the one of the re-samples existing rasters i.e. C:\Users\zstanley\OneDrive - Golden Gate National Parks Conservancy\__DataLibrary\SeaLevelRise\Marin_SLR_ART_2017.gdb\Marin_SLR_ART_2017.gdb\Marin_inundation_rast_108  
 8. Fire Hazard classes / suitability values are: No Hazard =1, Moderate = 3, High= 4, Very High = 5.  
 9. CalEnviro Screen pollution values in the 60th percentile and above for **"Pollution Burden"** were included in data and get a score of 5 and values below that received a score of 1  
 10. CalEnviro Screen poverty (percent of the population living below two times the federal poverty level) data include values in the 40th percentile or above receiving a score of 5 and values below that having a score of 1.  
