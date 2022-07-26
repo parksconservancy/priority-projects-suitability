@@ -36,7 +36,7 @@ With this in mind inputs are combined to create an overall suitability score tha
 
 1. Compile data
 2. Clip all data both vector and raster to the three county area that includes GGNRA lands  where necessary
-3. Merge bay side inundation rasters and apply classes where 1 is no inundation and 5 is inundation of 2' or more
+3. Use bayside and coastside inundation rasters and apply classes where 1 is no inundation and 5 is inundation of 2' or more
 4. Verify the coordinate reference system (crs) is common to all datasets - in this case we use NAD 1983 UTM Zone 10N, epsg: 26910  
 5. For existing rasters resample all of them to 10-m nearest neighbor algorithm  
 6. In order for vector datasets to appear as continuous they are merged, intersected or unioned with county boundaries and assigned a no x value or zero to areas with no data. For example, for  example fire hazard areas without the class of moderate, high or very high will receive a ‘no hazard class’. 
