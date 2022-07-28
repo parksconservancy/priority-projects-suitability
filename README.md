@@ -22,6 +22,9 @@ __Map Title:__ 'ProjectPrioritiesData_GGNRA'
 1. CalEnviro Screen pollution data included values in the 60th percentile [CalEnviroScreen 4.0 Geodatabase](https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40gdbf2021gdb.zip)
 2. CalEnviro Screen poverty (percent of the population living below two times the federal poverty Level) data includes values in the 40th percentile and above were included in data. [CalEnviroScreen 4.0 Geodatabase](https://oehha.ca.gov/media/downloads/calenviroscreen/document/calenviroscreen40gdbf2021gdb.zip)
 
+### Open Space:
+1. California Protected Areas Database Units, 2021 [CPAD](https://data.cnra.ca.gov/dataset/california-protected-areas-database)
+
 ## Suitability Analysis
 In general terms a suitability analysis overlays geographic data in raster form, tranforms them to a common scale and outputs a score based a that scale, with 1 being the least suitable value and 5 the being the most suitable for each input dataset. All inputs have been weighted evenly.
 
@@ -41,7 +44,7 @@ With this in mind inputs are combined to create an overall suitability score tha
 9. CalEnviro Screen pollution values in the 60th percentile and above for **"Pollution Burden"** were included in data and get a score of 5 and values below that received a score of 1  
 10. CalEnviro Screen poverty (percent of the population living below two times the federal poverty level) data include values in the 40th percentile or above receiving a score of 5 and values below that having a score of 1.  
 11. Heat severity is measured on a scale of 1-5., with 1 being a relatively mild heat area (slightly above the mean for the city), and 5 being a severe heat area (significantly above the mean for the city).  Suitability values are assigned the same class.
-12. The resulting rasters are input into the suitability modeler in ArcGIS pro, scaled, and an output raster is generated.
+12. The resulting rasters are input into the suitability modeler in ArcGIS pro, transformed, and an output raster is generated.
 
 #### Sample Suitability Analysis:  
 ![Suitability Map](graphics/suitabilitysample.jpg)
