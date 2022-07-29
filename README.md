@@ -26,9 +26,9 @@ __Map Title:__ 'ProjectPrioritiesData_GGNRA'
 1. California Protected Areas Database Units, 2021 [CPAD](https://data.cnra.ca.gov/dataset/california-protected-areas-database)
 
 ## Suitability Analysis
-In general terms a suitability analysis overlays geographic data in raster form, tranforms them to a common scale and outputs a score based a that scale, with 1 being the least suitable value and 5 the being the most suitable for each input dataset. All inputs have been weighted evenly.
+In general terms a suitability analysis overlays geographic data in raster form, transforms them to a common scale and outputs a score based a that scale, with 1 being the least suitable value and 5 the being the most suitable for each input dataset. All inputs have been weighted evenly.
 
-With this in mind inputs are combined to create an overall suitability score that sums the values for each pixel at its location, so with 5 inputs the minimum value could be as low as 5 and the maximum value could be as high as 25 input datasets x maximum suitability score of 5 = 25. 
+With this in mind inputs are combined to create an overall suitability score that sums the values for each pixel at its location, so with 5 inputs the minimum value could be as low as 6 and the maximum value could be as high as 30.6 input datasets x maximum suitability score of 56 = 30. 
 
 ## Workflow and Data Processing (Note: these are not step-bt-step directions but are a general process description)  
 #### ArcGIS Pro Suitability Modeler is used to generate the suitability raster
@@ -44,7 +44,8 @@ With this in mind inputs are combined to create an overall suitability score tha
 9. CalEnviro Screen pollution values in the 60th percentile and above for **"Pollution Burden"** were included in data and get a score of 5 and values below that received a score of 1  
 10. CalEnviro Screen poverty (percent of the population living below two times the federal poverty level) data include values in the 40th percentile or above receiving a score of 5 and values below that having a score of 1.  
 11. Heat severity is measured on a scale of 1-5., with 1 being a relatively mild heat area (slightly above the mean for the city), and 5 being a severe heat area (significantly above the mean for the city).  Suitability values are assigned the same class.
-12. The resulting rasters are input into the suitability modeler in ArcGIS pro, transformed, and an output raster is generated.
+12. Open space data were queried to exclude city parks so the focus would be on land management types that the Conservancy typically does work on. Additionally, excluding these areas would serve to not increase suitability score in a way that suggests its presence would be a negative factor in areas where inputs like sea level rise, poverty and pollution are a more valuable indicator of overall community vulnerability.
+13. The resulting rasters are input into the suitability modeler in ArcGIS pro, transformed, and an output raster is generated.
 
 #### Sample Suitability Analysis:  
 ![Suitability Map](graphics/suitabilitysample.jpg)
